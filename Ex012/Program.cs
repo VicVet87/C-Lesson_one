@@ -37,7 +37,8 @@ bool IsPolindrome(string text, out string error)
     try
     {        
         int num = Convert.ToInt32(text);
-        if (num/10000 == num%10)
+        //result = num/10000 == num%10 ? num/1000%10 == num%100/10 ? true : false : false;  //можно так 1-й строкой
+        if (num/10000 == num%10) //или так
         {
             if (num/1000%10 == num%100/10)
             {
