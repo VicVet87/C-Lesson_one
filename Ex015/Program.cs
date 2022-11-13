@@ -4,7 +4,7 @@
 
 
 string error = string.Empty;
-int result = 1;
+long result = 1;
 for (int A = GetIntNumberRequest("Введите число A", false), B = GetIntNumberRequest("Введите натуральное число B", true), i = 1;
      error == string.Empty && i <= B;
      i++ )
