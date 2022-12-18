@@ -6,11 +6,9 @@ string error = string.Empty;
 int m = 0;
 int n = 0;
 int sum = 0;
-string temp;
 
 while (error != "exit")
-{
-    temp = string.Empty;
+{    
     Console.WriteLine("Получение суммы натуральных элементов в промежутке от M до N");
     m  = GetIntNumberRequest("Введите число M: ", out error);
     if(error == "exit") continue;
